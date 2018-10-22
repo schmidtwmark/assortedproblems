@@ -20,11 +20,10 @@ def MP(k):
             
             skip = Cache[i+1][l]
             build = Profits[i] + Cache[temp][l-1]
-            print(i, skip, build)
             Cache[i][l] = max(skip, build)
     print(Cache)
 
-MP(2)
+MP(3)
 
 
 
